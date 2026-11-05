@@ -1,0 +1,8 @@
+# Bitácora
+
+Fecha: 06/11/2026
+Predicción: ¿Que sucede si se aumenta el número de elementos?, primero sobre u(L), el desplazamiento en el nodo del extremo derecho será exactamente igual a la solución exacta para cualquier valor de n (incluso con n = 2). Es decir, el valor numérico en x = L no cambiará al refinarse la malla. Luego sobre el error entre nodos, El error absoluto máximo en los puntos medios de los elementos disminuirá a medida que aumente el número de elementos n (el error tenderá a cero conforme n tiende a infinito).
+¿Que sucede si fijo el extremo derecho u(L) = 0?, con respecto a los efectos sobre los desplazamientos, Los desplazamientos a lo largo de toda la barra disminuirán significativamente en magnitud respecto al caso base. El desplazamiento máximo ya no estará en x = L (donde ahora es nulo, u(L) = 0), sino en un punto intermedio de la barra. Luego con respecto al efecto sobre las reacciones en los apoyos, aparecerá una nueva reacción de apoyo en x = L (R_L), y la reacción en el apoyo izquierdo x = 0 (R_0) cambiará de valor respecto al caso original.
+Cambio: Se implemntan partes al código que faltaba por agregar, en analisis se agrego la ecuacion diferencial, se modifico la funcion error_puntos_medios, se calculó el error máximo, el cual compara el promedio numérico con la referencia exacta en cada punto medio y devuelve el mayor error encontrado con np.max(errores) y retorna el máximo error absoluto entre todos los elementos.
+Prueba y evidencia: Se puede evidenciar en el código entregado, llegando al final en las ultimas líneas se ve el calculo del error máximo.
+Commit: No entiendo a que se refire con el commit de vscode o si es de otra cosa pero como no entiendo esto lo dejo sin información del commit.

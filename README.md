@@ -15,13 +15,3 @@ El lanzador suministrado inicia y cierra solo su propia sesión local. Para un s
 No comparta credenciales ni exponga puertos del solver. No ejecute código recibido sin revisarlo.
 Los bloques PENDIENTE/NotImplementedError son trabajo del estudiante, no fallos del entorno.
 
-## Informe y entrega
-Reutilice `informe/main.tex`: es la plantilla U1 con el contenido orientador actualizado.
-Conserve `README.md`, entradas, código, CSV, logs y versiones. Incluya el PDF compilado y todas sus fuentes.
-Complete `entrega.json` y `USO_IA.md`; copie la URL real del repositorio y el hash completo del commit evaluado.
-No incluya `.venv`, `.git`, credenciales ni archivos binarios grandes del solver. Los logs textuales sí se entregan.
-Las tolerancias comprueban resultados; no confunda un test que pasa con validación experimental.
-
-## Preentrega
-Ejecute `python verificar_entrega.py .` para detectar archivos faltantes; no ejecuta el código ni reemplaza la rúbrica. Las advertencias son de estructura, no una nota.
-Tras verificar su entorno, registre sus versiones con `python -m pip freeze > requirements-lock.txt`. No incluya `.venv` en la entrega.
